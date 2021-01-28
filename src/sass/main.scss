@@ -4,4 +4,11 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './units/variables';
+@import './base/base';
+@import './componets/headerhero';
+@import './componets/products';
+@import './componets/howitmade';
+@import './componets/slider';
+@import './componets/locationfooter';
 @import './example';

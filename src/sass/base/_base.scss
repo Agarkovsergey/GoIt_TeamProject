@@ -1,0 +1,110 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: $white-color;
+  color: $black-color;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.76;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* начало болка прижимает футер к низу страници на случай если у нас будет мало контента, у мы не хотим видеть ниже футера пустоту */
+/* так же необходимо задать height:100%; для body и html, и задать display: flex; flex-direction: column; для body */
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+main {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+/* конец блока прижимает футер к низу страници на случай если у нас будет мало контента, у мы не хотим видеть ниже футера пустоту */
+
+.section-title {
+  font-family: 'Titan One', cursive;
+}
+.container {
+  margin: 0 auto;
+  @media screen and (min-width: 320px) {
+    width: 280px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 400px;
+    // да этой точки перелома в маккете нет, но при обсуждении с ментором
+    // был затронут этот момент, слишком большие перепады по ширине экрана,
+    // потому нужна еще и эта точка перелеома, и тут придеться
+    // импровизировать так как дизайна нет, прделагаю делать что-то
+    // середнее между 320px и 768px
+  }
+  @media screen and (min-width: 768px) {
+    width: 700px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1050px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  background-color: $white-color;
+  color: $red-color;
+  &:hover,
+  &:focus,
+  &-accent {
+    background-color: $red-color;
+    color: $white-color;
+  }
+  &-accent {
+    &:hover,
+    &:focus {
+      background-color: $white-color;
+      color: $red-color;
+    }
+  }
+}
+.button,
+.button-accent {
+  transition: background-color 1250ms $timing-func, color 1250ms $timing-func;
+}
