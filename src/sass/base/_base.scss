@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   height: 100%;
 }
+
 *,
 *::after,
 *::before {
@@ -9,6 +10,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: $white-color;
   color: $black-color;
@@ -24,6 +26,7 @@ body {
 .section-title {
   font-family: 'Titan One', cursive;
 }
+
 .container {
   margin: 0 auto;
   width: 100%;
@@ -32,6 +35,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   @media screen and (min-width: 480px) {
     width: 480px;
     // да этой точки перелома в маккете нет, но при обсуждении с ментором
@@ -40,17 +44,20 @@ body {
     // импровизировать так как дизайна нет, прделагаю делать что-то
     // середнее между 320px и 768px
   }
+
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
+
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-right: 115px;
     padding-left: 115px;
   }
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,27 +68,34 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 ul {
   list-style: none;
 }
+
 address {
   font-style: normal;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 .button {
   background-color: $white-color;
   color: $red-color;
+
   &:hover,
   &:focus,
   &-accent {
     background-color: $red-color;
     color: $white-color;
   }
+
   &-accent {
+
     &:hover,
     &:focus {
       background-color: $white-color;
@@ -89,6 +103,7 @@ img {
     }
   }
 }
+
 .button,
 .button-accent {
   transition: background-color 1250ms $timing-func, color 1250ms $timing-func;
