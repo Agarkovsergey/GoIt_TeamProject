@@ -1,17 +1,17 @@
-.headerhero {
-  text-align: center;
-  font-weight: 700;
-  font-size: 100px;
-}
-
 header {
   position: absolute;
+  z-index: 999;
   width: 100%;
 
   & .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-left: 6.25%;
+    margin-right: 6.25%;
+    width: 100%;
+
   }
 
   a {
@@ -26,7 +26,7 @@ header {
     font-size: 25px;
     line-height: 1.86;
     text-decoration: none;
-    color: #D41443;
+    color: $red-color;
 
     text-transform: uppercase;
 
@@ -50,54 +50,128 @@ header {
 
     display: none;
 
-    background-color: #E17992;
+    background-color: $menu-bg-color;
   }
 }
 
 .hero {
   height: 502px;
-  background-color: #FFB8CA;
+  background-color: $produts-bg-color;
 
-
-  .iceimg-container {
+  .container {
     position: relative;
-    z-index: 0;
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-
-    // margin-left: 36px;
-    padding-top: 83px;
-    padding-left: 36px;
-
-    .back-round {
-      position: absolute;
-      // display: flex;
-      margin-left: 36px;
-      height: 346px;
-      width: 346px;
-
-      border-radius: 50%;
-      background-color: #FFA5BA;
-    }
-
-    img {
-      position: absolute;
-
-      margin-top: 9px;
-      margin-left: 36px;
-
-
-    }
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
   }
+
+  .headr-icecream {
+    position: absolute;
+    top: 92px;
+    left: 63.2%;
+    transform: translateX(-50%);
+  }
+
+  .back-round {
+    position: absolute;
+    top: 83px;
+    left: 65.3%;
+    transform: translateX(-50%);
+
+    height: 346px;
+    width: 346px;
+
+    border-radius: 50%;
+    background-color: #FFA5BA;
+  }
+
 
   .content {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 193px;
+    left: 6.25%;
 
-    margin-top: 193px;
-    margin-left: 20px;
+    // margin-left: 20px;
+
+    h1 {
+      margin-bottom: 19px;
+
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.15;
+      // letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: $white-color;
+
+
+      p {
+
+        font-size: 48px;
+        line-height: 0.96;
+
+        text-transform: uppercase;
+
+        color: $red-color;
+      }
+    }
+
+    .hero-link {
+
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      li:last-child {
+        margin-left: 8px;
+
+      }
+
+
+      a {
+        display: inline-block;
+        padding: 7px 14px;
+
+        border-radius: 20px;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-decoration: none;
+      }
+
+      .ancor {
+        background-color: $red-color;
+        color: $white-color;
+
+        &:hover,
+        &:focus {
+          background-color: $ancor-hover-darc;
+          color: $white-color;
+        }
+
+        &-accent {
+          background-color: $white-color;
+          color: $red-color;
+
+
+          &:hover,
+          &:focus {
+            background-color: $ancor-hover-lite;
+            color: $red-color;
+          }
+        }
+      }
+
+      .ancor,
+      .ancor-accent {
+        transition: background-color 1250ms $timing-func, color 1250ms $timing-func;
+      }
+
+    }
   }
 }

@@ -23,21 +23,45 @@ body {
   flex-direction: column;
   height: 100%;
 }
+
+/* начало болка прижимает футер к низу страници на случай если у нас будет мало контента, у мы не хотим видеть ниже футера пустоту */
+/* так же необходимо задать height:100%; для body и html, и задать display: flex; flex-direction: column; для body */
+header {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+main {
+  /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+footer {
+  /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+/* конец блока прижимает футер к низу страници на случай если у нас будет мало контента, у мы не хотим видеть ниже футера пустоту */
+
 .section-title {
   font-family: 'Titan One', cursive;
 }
 
 .container {
   margin: 0 auto;
-  width: 100%;
+
   @media screen and (min-width: 320px) {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 280px;
   }
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 400px;
     // да этой точки перелома в маккете нет, но при обсуждении с ментором
     // был затронут этот момент, слишком большие перепады по ширине экрана,
     // потому нужна еще и эта точка перелеома, и тут придеться
@@ -46,15 +70,11 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
+    width: 700px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    padding-right: 115px;
-    padding-left: 115px;
+  @media screen and (min-width: 1200px) {
+    width: 1050px;
   }
 }
 
