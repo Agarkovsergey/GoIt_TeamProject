@@ -14,15 +14,16 @@
     <title>Заголовок страницы</title>
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/headerhero.html"></include>
-    <include src="./partials/products.html"></include>
-    <include src="./partials/howitmade.html"></include>
-    <include src="./partials/slider.html"></include>
-    <include src="./partials/locationfooter.html"></include>
+    <main class="main">
+      <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+      <include src="./partials/headerhero.html"></include>
+      <include src="./partials/products.html"></include>
+      <include src="./partials/howitmade.html"></include>
+      <include src="./partials/slider.html"></include>
+      <include src="./partials/locationfooter.html"></include>
 
-    <include src="./partials/example.html"></include>
-
+      <include src="./partials/example.html"></include>
+    </main>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
