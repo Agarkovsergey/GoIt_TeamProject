@@ -1,41 +1,91 @@
 <header>
-    <div class="container">
-        <a href="http://#"><svg width="50" height="50">
-                <use href="./images/symbol-defs.svg#icon-logo"></use>
-            </svg>
-            <span class="logo-tytel section-title">icecream</span>
-        </a>
-        <button class="menu-button" type="button"></button>
-        <div class="menu">
-            <button type="button" class="buynow">
-                Buy now
-            </button>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>How it’s made?</li>
-                    <li>Our products</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
+  <div class="container">
+    <a
+      href="https://www.dullmensclub.com/new/wp-content/uploads/2020/01/DismalImpressiveFritillarybutterfly-size_restricted.gif"
+      ><svg width="50" height="50">
+        <use href="./images/symbol-defs.svg#icon-logo"></use>
+      </svg>
+      <span class="logo-tytel section-title">icecream</span>
+    </a>
+    <button
+      class="menu-button"
+      type="button"
+      aria-expanded="false"
+      data-menu-button
+    >
+      <svg aria-label="переключатель мобильного меню" width="20" height="12">
+        <use
+          class="icon-menu"
+          href="./images/symbol-defs.svg#icon-menu-b"
+        ></use>
+        <use
+          class="icon-cross"
+          href="./images/symbol-defs.svg#icon-close-b"
+        ></use>
+      </svg>
+    </button>
+    <div class="b-menu" data-menu>
+      <!-- <button
+        class="menu-button-closed"
+        type="button"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg width="14" height="14">
+          <use href="./images/symbol-defs.svg#icon-close-b"></use>
+        </svg>
+      </button> -->
+      <button type="button" class="buynow">Buy now</button>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>How it’s made?</li>
+          <li>Our products</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
     </div>
+  </div>
 </header>
 <section class="hero">
-    <div class="container">
-        <div class="back-round"></div>
-        <img class="headr-icecream" width="171" height="410" src="./images/hero_mobile_.png" alt="nice icecream" />
+  <div class="container">
+    <div class="back-round"></div>
+    <img
+      class="headr-icecream"
+      width="171"
+      height="410"
+      src="./images/hero_mobile_.png"
+      alt="nice icecream"
+    />
 
-        <div class="content">
-            <h1>
-                ice cream <br> made with <p>passion</p>
-            </h1>
+    <div class="content">
+      <h1>
+        ice cream <br />
+        made with
+        <p>passion</p>
+      </h1>
 
-            <ul class="hero-link">
-                <li><a class="ancor" href="#Products">Products</a></li>
-                <li><a class="ancor-accent" href="#How">How it’s made?</a></li>
-            </ul>
-        </div>
+      <ul class="hero-link">
+        <li><a class="ancor" href="#Products">Products</a></li>
+        <li><a class="ancor-accent" href="#How">How it’s made?</a></li>
+      </ul>
     </div>
+  </div>
+  <script>
+    (() => {
+      const menuBtnRef = document.querySelector('[data-menu-button]');
+      const mobileMenuRef = document.querySelector('[data-menu]');
+
+      menuBtnRef.addEventListener('click', () => {
+        const expanded =
+          menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+        menuBtnRef.classList.toggle('is-open');
+        menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+        mobileMenuRef.classList.toggle('is-open');
+      });
+    })();
+  </script>
 </section>
