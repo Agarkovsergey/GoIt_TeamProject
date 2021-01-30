@@ -663,6 +663,120 @@ header .b-menu li :last-child {
   }
 }
 
+.howitmade {
+  width: 100%;
+  padding-top: 125px;
+  text-align: center;
+  margin: 0;
+  background-color: #fff5f6;
+}
+@media screen and (min-width: 768px) {
+  .howitmade {
+    padding-top: 130px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .howitmade {
+    padding-top: 125px;
+  }
+}
+
+.title1_howitmade {
+  font-family: Titan One;
+  color: #ffa5ba;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title1_howitmade {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title1_howitmade {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 15px;
+  }
+}
+
+.title2_howitmade {
+  font-family: Titan One;
+  color: #d41443;
+  font-weight: 400px;
+  font-size: 34px;
+  line-height: 38, 93px;
+  letter-spacing: 0.04em;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .title2_howitmade {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title2_howitmade {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 55px;
+    padding-top: 125px;
+  }
+}
+
+.button_readmore {
+  font-family: DM Sans;
+  width: 176px;
+  height: 44px;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+  border-radius: 22px;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 20, 83px;
+  padding-left: 37px;
+  padding: 10px 82px 10px 62px;
+}
+
+.howitmade_list {
+  justify-content: space-around;
+  margin-top: 39px;
+}
+@media screen and (min-width: 768px) {
+  .howitmade_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.howitmade_lii {
+  width: 100%;
+  margin-bottom: 38px;
+}
+@media screen and (min-width: 1200px) {
+  .howitmade_lii {
+    width: 270px;
+  }
+}
+.number_howitmade {
+  font-family: Titan One;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
 .section-slider {
   margin-top: 120px;
   margin-bottom: 135px;
