@@ -95,7 +95,6 @@ img {
   }
 
   &-accent {
-
     &:hover,
     &:focus {
       background-color: $white-color;
@@ -107,4 +106,30 @@ img {
 .button,
 .button-accent {
   transition: background-color 1250ms $timing-func, color 1250ms $timing-func;
+}
+
+.buynow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 59px;
+
+  border-radius: 22px;
+  border: none;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: $red-color;
+
+  & svg {
+    margin-top: 1px;
+    margin-left: 14px;
+  }
 }
