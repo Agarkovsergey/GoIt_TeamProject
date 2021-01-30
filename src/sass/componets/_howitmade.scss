@@ -1,0 +1,105 @@
+.howitmade{
+width: 100%;
+padding-top: 125px;
+text-align: center;
+margin: 0;
+background-color: $footer-bg-color;
+@media screen and (min-width: 768px){
+    padding-top: 130px;
+    }
+@media screen and (min-width: 1200px) {
+    padding-top: 125px;
+}
+}
+
+.title1_howitmade {
+    font-family: Titan One;
+    color: $pink-color;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px){
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 30px;
+        }
+    @media screen and (min-width: 1200px){
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 15px;    
+        }
+    }
+.title2_howitmade  {
+    font-family: Titan One;
+    color: $red-color;
+    font-weight: 400px;
+    font-size: 34px;
+    line-height: 38,93px;
+    letter-spacing: 0.04em;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    @media screen and (min-width: 768px){
+        margin-bottom: 50px;
+        font-size: 48px;
+        line-height: 55px;
+        }
+    @media screen and (min-width: 1200px){
+        font-size: 58px;
+        line-height: 66px;
+        margin-bottom: 55px;
+        padding-top: 125px;    
+        }
+}
+
+.button_readmore {
+    font-family: DM Sans;
+    width: 176px;
+    height: 44px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 20,83px;
+    padding-left: 37px;
+    padding: 10px 82px 10px 62px;
+
+}
+.howitmade_list{
+    justify-content: space-around;
+    margin-top: 39px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+.howitmade_lii {
+    width: 100%;
+    margin-bottom: 38px;
+    @media screen and (min-width: 768px){
+
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
+    &:not(:last-child) {
+        @media screen and (min-width: 768px){
+            // margin-bottom: ;
+        }
+    }
+}
+.number_howitmade {
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    color: $red-color;
+}
+
