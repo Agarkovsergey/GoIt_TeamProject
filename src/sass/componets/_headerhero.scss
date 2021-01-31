@@ -10,12 +10,23 @@ header {
 
     padding-left: 6.25%;
     padding-right: 6.25%;
+    padding-top: 6px;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 37px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-left: 46px;
+      padding-right: 115px;
+      width: 1280px;
+    }
   }
 
   a {
     svg {
-      margin-top: 6px;
+      // margin-top: 6px;
       margin-right: 19px;
     }
 
@@ -35,8 +46,11 @@ header {
   .menu-button {
     position: relative;
     z-index: 998;
-
     display: flex;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+
     align-items: center;
     justify-content: center;
 
@@ -55,6 +69,7 @@ header {
     }
     &.is-open {
       @media screen and (min-width: 768px) {
+        top: -30px;
         margin-right: -650px;
       }
     }
@@ -91,6 +106,19 @@ header {
     background-color: $menu-bg-color;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     display: none;
+
+    @media screen and (min-width: 1200px) {
+      position: static;
+      display: block;
+
+      padding: 0 0px;
+
+      height: 100%;
+
+      background-color: transparent;
+      filter: none;
+    }
+
     &.is-open {
       display: block;
     }
@@ -107,10 +135,23 @@ header {
       @media screen and (min-width: 768px) {
         padding: 10px 48px;
       }
+      @media screen and (min-width: 1200px) {
+        display: none;
+      }
     }
     ul {
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       :last-child {
         border-bottom: 2px solid $menu-border;
+
+        @media screen and (min-width: 1200px) {
+          border-bottom: none;
+        }
       }
     }
     li {
@@ -122,13 +163,27 @@ header {
       height: 42px;
 
       border-top: 2px solid $menu-border;
+      font-weight: 700;
 
       color: $white-color;
       &:hover {
         color: $red-color;
       }
-      :last-child {
-        border-bottom: 2px solid $menu-border;
+      @media screen and (min-width: 1200px) {
+        display: block;
+
+        padding-left: 0px;
+
+        height: 100%;
+
+        border-top: none;
+
+        font-size: 16px;
+        line-height: 1.31;
+
+        &:not(:last-child) {
+          margin-right: 35px;
+        }
       }
     }
   }
@@ -137,14 +192,26 @@ header {
 .hero {
   height: 502px;
   background-color: $produts-bg-color;
+  img {
+    max-width: none;
+  }
+
   @media screen and (min-width: 768px) {
     height: 399px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 665px;
   }
 
   .container {
     position: relative;
+
+    // display: flex;
+    // justify-content: space-between;
+
     margin-left: 0;
     margin-right: auto;
+
     width: 100%;
   }
 
@@ -156,6 +223,10 @@ header {
     @media screen and (min-width: 768px) {
       top: 63px;
       left: 58.5%;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 108px;
+      left: 59.3%;
     }
   }
 
@@ -177,6 +248,13 @@ header {
       height: 324px;
       width: 324px;
     }
+    @media screen and (min-width: 1200px) {
+      top: 52px;
+      left: 62%;
+
+      height: 538px;
+      width: 538px;
+    }
   }
 
   .content {
@@ -188,6 +266,9 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      top: 171px;
     }
 
     h1 {
@@ -209,6 +290,13 @@ header {
         line-height: 1.14;
         letter-spacing: 0.04em;
       }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 25px;
+
+        font-size: 38px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+      }
       p {
         font-size: 48px;
         line-height: 0.96;
@@ -221,6 +309,9 @@ header {
           line-height: 0.9;
           letter-spacing: 0.04em;
         }
+        @media screen and (min-width: 1200px) {
+          font-size: 58px;
+        }
       }
     }
 
@@ -228,6 +319,13 @@ header {
       display: flex;
       align-items: center;
       text-align: center;
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 19px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 56px;
+      }
 
       li:last-child {
         margin-left: 8px;
@@ -243,10 +341,15 @@ header {
         font-style: normal;
         font-weight: 400;
         font-size: 8px;
-        line-height: 10px;
+        line-height: 1.25;
         text-decoration: none;
         @media screen and (min-width: 768px) {
           padding: 7px 12px;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: 1.3;
+          padding: 11px 20px;
         }
       }
 
@@ -280,12 +383,15 @@ header {
 
     .hero-milk-container {
       display: none;
+
       @media screen and (min-width: 768px) {
         display: flex;
         align-items: flex-end;
+
         .hero-description {
           display: flex;
           flex-direction: column;
+          margin-left: -4px;
           width: 114px;
 
           font-family: DM Sans;
@@ -294,7 +400,106 @@ header {
           font-size: 8px;
           line-height: 1.5;
           color: $white-color;
+
+          @media screen and (min-width: 1200px) {
+            width: 200px;
+
+            margin-left: 30px;
+            font-size: 14px;
+            line-height: 1.4;
+          }
+
+          p {
+            margin-bottom: 7px;
+
+            @media screen and (min-width: 768px) {
+              margin-bottom: 20px;
+            }
+          }
+          svg {
+            @media screen and (min-width: 768px) {
+              width: 18px;
+              height: 18px;
+            }
+            @media screen and (min-width: 1200px) {
+              width: 25px;
+              height: 25px;
+            }
+          }
         }
+      }
+    }
+  }
+  .info {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+
+    .info-data {
+      position: relative;
+      top: 94px;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      .cafe {
+        margin-right: auto;
+        width: 43px;
+        height: 44px;
+        position: relative;
+      }
+      .truck {
+        margin-right: auto;
+
+        width: 51px;
+        height: 43px;
+
+        position: relative;
+      }
+      .ring {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+
+        width: 16px;
+        height: 16px;
+        background-color: $white-color;
+        border-radius: 50%;
+      }
+      .data-content {
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 1.14;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: $red-color;
+      }
+      .name {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: right;
+
+        color: $white-color;
+      }
+    }
+    .tasty {
+      position: absolute;
+      right: 6.25%;
+      top: 266px;
+
+      @media screen and (min-width: 1200px) {
+        position: absolute;
+        right: 6.25%;
+        top: 433px;
       }
     }
   }
