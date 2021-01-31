@@ -24,18 +24,14 @@
         ></use>
       </svg>
     </button>
+
     <div class="b-menu" data-menu>
-      <!-- <button
-        class="menu-button-closed"
-        type="button"
-        aria-expanded="false"
-        data-menu-button
-      >
-        <svg width="14" height="14">
-          <use href="./images/symbol-defs.svg#icon-close-b"></use>
+      <button type="button" class="buynow">
+        Buy now
+        <svg width="7" height="10">
+          <use href="./images/symbol-defs.svg#arrow"></use>
         </svg>
-      </button> -->
-      <button type="button" class="buynow">Buy now</button>
+      </button>
       <nav>
         <ul>
           <li>Home</li>
@@ -46,18 +42,56 @@
         </ul>
       </nav>
     </div>
+
+    <button type="button" class="buynow">
+      Buy now
+      <svg width="7" height="10">
+        <use href="./images/symbol-defs.svg#arrow"></use>
+      </svg>
+    </button>
   </div>
 </header>
 <section class="hero">
   <div class="container">
     <div class="back-round"></div>
-    <img
-      class="headr-icecream"
-      width="171"
-      height="410"
-      src="./images/hero_mobile_.png"
-      alt="nice icecream"
-    />
+    <picture class="headr-icecream">
+      <source
+        srcset="
+          ./images/hero_icecream_mobile_.png    1x,
+          ./images/hero_icecream_mobile_@2x.png 2x,
+          ./images/hero_icecream_mobile_@3x.png 3x
+        "
+        type="image/bmp"
+        media="(max-width: 767px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero_icecream_tablet.png    1x,
+          ./images/hero_icecream_tablet@2x.png 2x,
+          ./images/hero_icecream_tablet@3x.png 3x
+        "
+        type="image/bmp"
+        media="(min-width: 768px) and (max-width: 1199px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero_icecream_desctop.png    1x,
+          ./images/hero_icecream_desctop@2x.png 2x,
+          ./images/hero_icecream_desctop@3x.png 3x
+        "
+        type="image/bmp"
+        media="(min-width: 1200px)"
+      />
+
+      <img
+        sizes="(max-width: 767px) 170px, (min-width: 768px) 143px,
+      (min-width: 1200px) 236px"
+        src="./images/hero_icecream_mobile_.png"
+        alt="nice icecream"
+      />
+    </picture>
 
     <div class="content">
       <h1>
@@ -70,6 +104,79 @@
         <li><a class="ancor" href="#Products">Products</a></li>
         <li><a class="ancor-accent" href="#How">How it’s made?</a></li>
       </ul>
+      <div class="hero-milk-container">
+        <picture>
+          <source
+            srcset="
+              ./images/hero_milk_tablet.png    1x,
+              ./images/hero_milk_tablet@2x.png 2x,
+              ./images/hero_milk_tablet@3x.png 3x
+            "
+            type="image/bmp"
+            media="(min-width: 768px) and (max-width: 1199px)"
+          />
+
+          <source
+            srcset="
+              ./images/hero_milk_desctop_.png    1x,
+              ./images/hero_milk_desctop_@2x.png 2x,
+              ./images/hero_milk_desctop_@3x.png 3x
+            "
+            type="image/bmp"
+            media="(min-width: 1200px)"
+          />
+
+          <img src="./images/hero_milk_tablet.png" alt="milk" />
+        </picture>
+        <div class="hero-description">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+
+          <a href="#"
+            ><svg>
+              <use href="./images/symbol-defs.svg#icon-arrow_ring"></use></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <!-- <div class="info-data">
+        <div class="cafe">
+          <div class="ring"></div>
+          <p class="data-content">16</p>
+          <p class="name">cafes</p>
+        </div>
+        <div class="truck">
+          <div class="ring"></div>
+          <p class="data-content">23</p>
+          <p class="name">food trucks</p>
+        </div>
+      </div> -->
+      <picture class="tasty">
+        <source
+          srcset="
+            ./images/hero_so_tasy_tablet_.png    1x,
+            ./images/hero_so_tasy_tablet_@2x.png 2x,
+            ./images/hero_so_tasy_tablet_@3x.png 3x
+          "
+          type="image/bmp"
+          media="(min-width: 768px) and (max-width: 1199px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero_so_tasy_desctop_.png    1x,
+            ./images/hero_so_tasy_desctop_@2x.png 2x,
+            ./images/hero_so_tasy_desctop_@3x.png 3x
+          "
+          type="image/bmp"
+          media="(min-width: 1200px)"
+        />
+
+        <img src="./images/hero_so_tasy_tablet_.png" alt="tasty" />
+      </picture>
     </div>
   </div>
   <script>

@@ -1,0 +1,153 @@
+.howitmade{
+    width: 100%;
+    padding-top: 125px;
+    margin: 0;
+    background-color: $footer-bg-color;
+    // background-image: url('../images/milk_mobile.png');
+
+    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    //     background-image: url('../images/milk_mobile_1@2x.png');
+    
+    // }
+    // @media screen and (min-width: 768px) {
+    //     background-image: none;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     background-image: url('../images/milk_decktop.png');
+
+    //     background-position: top 342px;
+    // }
+    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    //     background-image: url('../images/milk_decktop1@2x.png');
+    // }
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+}
+
+.title1_howitmade {
+    font-family: Titan One;
+    color: $pink-color;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px){
+        margin-bottom: 16px;
+        font-size: 26px;
+        line-height: 30px;
+        }
+    @media screen and (min-width: 1200px){
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 15px;    
+        }
+    }
+.title2_howitmade  {
+    font-family: Titan One;
+    color: $red-color;
+    font-weight: 400px;
+    font-size: 34px;
+    line-height: 38,93px;
+    letter-spacing: 0.04em;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (min-width: 768px){
+        margin-bottom: 50px;
+        font-size: 48px;
+        line-height: 55px;
+        }
+    @media screen and (min-width: 1200px){
+        font-size: 58px;
+        line-height: 66px;
+        margin-bottom: 55px;   
+        }
+}
+.text_howitmade {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.lorem1 {
+    margin-top: 46px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+}
+.lorem2 {
+    margin-top: 47px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: $brawn-color;
+}
+
+
+.button_readmore {
+    font-family: DM Sans;
+    width: 176px;
+    height: 44px;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    text-align: center;
+    border-radius: 22px;
+    border: none;
+    border-radius: 22px;
+    font-size: 16px;
+    line-height: 20,83px;
+    padding-left: 37px;
+    margin-top: 17px;
+
+&:hover{
+    background-color: $hover-buttom-howitmade;
+    color: $red-color;
+}
+}
+
+.howitmade_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+        margin-top: 38px;
+    
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+}
+.howitmade_lii {
+    width: 100%;
+    margin-top: 38px;
+    justify-content: space-between;
+    @media screen and (min-width: 768px){
+
+    }
+    @media screen and (min-width: 1200px){
+        width: 270px;
+    }
+    &:not(:last-child) {
+        @media screen and (min-width: 768px){
+            // margin-bottom: ;
+        }
+    }
+}
+.number_howitmade {
+    font-family: Titan One;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    color: $red-color;
+    margin-top: 16px;
+}
+
+
