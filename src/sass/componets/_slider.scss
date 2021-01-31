@@ -1,6 +1,9 @@
 .section-slider {
   margin-top: 120px;
-  margin-bottom: 135px;
+  margin-bottom: 119px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 135px;
+  }
 }
 .slider-content {
   @media screen and (min-width: 768px) {
