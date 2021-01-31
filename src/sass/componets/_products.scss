@@ -7,7 +7,7 @@
 
 .link {
   text-decoration: none;
-  color: inherit;
+  color: inherit
 }
 
 .products-section {
@@ -240,4 +240,21 @@
   padding-right: 17px;
 }
 
+
+
+.products-link::after {
+  display: block;
+  content: '';
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/arrow.png);
+  background-size: contain;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(30px);
+  
+  @media screen and (min-width: 1280px) {
+    transform: translateY(40px);
+  }
+} 
 
