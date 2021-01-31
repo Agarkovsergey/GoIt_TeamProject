@@ -127,6 +127,12 @@ img {
   text-align: center;
 
   color: $red-color;
+  &:hover,
+  &:focus {
+    background-color: $ancor-hover-lite;
+    color: $red-color;
+    transition: background-color 1250ms $timing-func;
+  }
 
   & svg {
     margin-top: 1px;
