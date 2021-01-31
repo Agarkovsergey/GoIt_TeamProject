@@ -112,12 +112,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 10px 59px;
-
   border-radius: 22px;
   border: none;
-
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -125,7 +122,6 @@ img {
   display: flex;
   align-items: center;
   text-align: center;
-
   color: $red-color;
   &:hover,
   &:focus {
@@ -133,7 +129,6 @@ img {
     color: $red-color;
     transition: background-color 1250ms $timing-func;
   }
-
   & svg {
     margin-top: 1px;
     margin-left: 14px;
