@@ -2,26 +2,27 @@
     width: 100%;
     padding-top: 125px;
     margin: 0;
-    background-image: url('../images/milk_mobile.png');
+    background-color: $footer-bg-color;
+    // background-image: url('../images/milk_mobile.png');
 
-    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-        background-image: url('../images/milk_mobile_1@2x.png');
-        height: 133px;
-    }
-    @media screen and (min-width: 768px) {
-        background-image: none;
-    }
-    @media screen and (min-width: 1200px) {
-        background-image: url('../images/milk_decktop.png');
-        height: 534px;
-        background-position: top 342px;
-    }
-    @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-        background-image: url('../images/milk_decktop1@2x.png');
-    }
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    //     background-image: url('../images/milk_mobile_1@2x.png');
+    
+    // }
+    // @media screen and (min-width: 768px) {
+    //     background-image: none;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     background-image: url('../images/milk_decktop.png');
+
+    //     background-position: top 342px;
+    // }
+    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    //     background-image: url('../images/milk_decktop1@2x.png');
+    // }
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 }
 
 .title1_howitmade {
@@ -66,8 +67,11 @@
         }
 }
 .text_howitmade {
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .lorem1 {
     margin-top: 46px;
