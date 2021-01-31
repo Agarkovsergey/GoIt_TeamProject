@@ -6,7 +6,7 @@
 
 .locations {
   background: $footer-bg-color;
-  padding-bottom: 1113px;
+  padding-bottom: 113px;
   @media screen and (min-width: 768px) {
     padding-bottom: 165px;
   }
@@ -17,7 +17,7 @@
     background-position: 0% 16%;
   }
   & .container {
-    background-color: #fff5f6;
+    // background-color: #fff5f6;
     // z-index: 1;
     // position: relative;
   }

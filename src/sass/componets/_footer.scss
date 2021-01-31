@@ -12,7 +12,7 @@
 
 .footer {
   padding-top: 5px;
-  // background-color: #fff5f6;
+  background-color: $footer-bg-color;
 
   .container {
     @media screen and (min-width: 768px) {
