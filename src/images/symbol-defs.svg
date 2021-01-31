@@ -54,7 +54,9 @@
             <path d="M1.10693 1L6.3648 5L1.10693 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" />
         </symbol>
-
+        <symbol id="icon-vector-14" viewBox="0 0 26 32">
+          <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
+        </symbol>
         <symbol id="icon-logo" viewBox="0 0 32 32">
             <path fill="#d41443" style="fill: var(--color2, #d41443)"
                 d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
