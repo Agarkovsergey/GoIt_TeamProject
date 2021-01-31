@@ -18,10 +18,10 @@ header {
       width: 768px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       padding-left: 46px;
       padding-right: 115px;
-      width: 1200px;
+      width: 1280px;
     }
   }
 
@@ -48,7 +48,7 @@ header {
     position: relative;
     z-index: 998;
     display: flex;
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       display: none;
     }
 
@@ -108,7 +108,7 @@ header {
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     display: none;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       position: static;
       display: block;
 
@@ -136,12 +136,12 @@ header {
       @media screen and (min-width: 768px) {
         padding: 10px 48px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         display: none;
       }
     }
     ul {
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -150,7 +150,7 @@ header {
       :last-child {
         border-bottom: 2px solid $menu-border;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           border-bottom: none;
         }
       }
@@ -170,7 +170,7 @@ header {
       &:hover {
         color: $red-color;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         display: block;
 
         padding-left: 0px;
@@ -201,7 +201,7 @@ header {
   @media screen and (min-width: 768px) {
     height: 399px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 665px;
   }
 
@@ -219,8 +219,8 @@ header {
       width: 768px;
     }
 
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
     }
   }
 
@@ -233,7 +233,7 @@ header {
       top: 63px;
       left: 58.5%;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: 108px;
       left: 59.3%;
     }
@@ -257,7 +257,7 @@ header {
       height: 324px;
       width: 324px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: 52px;
       left: 62%;
 
@@ -276,7 +276,7 @@ header {
       flex-direction: column;
       justify-content: flex-start;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       top: 171px;
     }
 
@@ -299,7 +299,7 @@ header {
         line-height: 1.14;
         letter-spacing: 0.04em;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         margin-bottom: 25px;
 
         font-size: 38px;
@@ -318,7 +318,7 @@ header {
           line-height: 0.9;
           letter-spacing: 0.04em;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           font-size: 58px;
         }
       }
@@ -332,7 +332,7 @@ header {
       @media screen and (min-width: 768px) {
         margin-bottom: 19px;
       }
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         margin-bottom: 56px;
       }
 
@@ -355,7 +355,7 @@ header {
         @media screen and (min-width: 768px) {
           padding: 7px 12px;
         }
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
           font-size: 14px;
           line-height: 1.3;
           padding: 11px 20px;
@@ -410,7 +410,7 @@ header {
           line-height: 1.5;
           color: $white-color;
 
-          @media screen and (min-width: 1200px) {
+          @media screen and (min-width: 1280px) {
             width: 200px;
 
             margin-left: 30px;
@@ -430,7 +430,7 @@ header {
               width: 18px;
               height: 18px;
             }
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 1280px) {
               width: 25px;
               height: 25px;
             }
@@ -505,7 +505,7 @@ header {
       right: 6.25%;
       top: 266px;
 
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: 1280px) {
         position: absolute;
         right: 6.25%;
         top: 433px;
