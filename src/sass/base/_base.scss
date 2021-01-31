@@ -105,7 +105,7 @@ img {
 
 .button,
 .button-accent {
-  transition: background-color 1250ms $timing-func, color 1250ms $timing-func;
+  transition: background-color 250ms $timing-func, color 250ms $timing-func;
 }
 
 .buynow {
@@ -127,7 +127,7 @@ img {
   &:focus {
     background-color: $ancor-hover-lite;
     color: $red-color;
-    transition: background-color 1250ms $timing-func;
+    transition: background-color 250ms $timing-func;
   }
   & svg {
     margin-top: 1px;

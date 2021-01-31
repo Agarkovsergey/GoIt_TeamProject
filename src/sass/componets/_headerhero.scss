@@ -15,12 +15,13 @@ header {
 
     @media screen and (min-width: 768px) {
       padding-top: 37px;
+      width: 768px;
     }
 
     @media screen and (min-width: 1200px) {
       padding-left: 46px;
       padding-right: 115px;
-      width: 1280px;
+      width: 1200px;
     }
   }
 
@@ -192,6 +193,7 @@ header {
 .hero {
   height: 502px;
   background-color: $produts-bg-color;
+  overflow: hidden;
   img {
     max-width: none;
   }
@@ -209,10 +211,17 @@ header {
     // display: flex;
     // justify-content: space-between;
 
-    margin-left: 0;
-    margin-right: auto;
+    // margin-left: 0;
+    // margin-right: auto;
 
     width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
   .headr-icecream {
@@ -376,8 +385,8 @@ header {
 
       .ancor,
       .ancor-accent {
-        transition: background-color 1250ms $timing-func,
-          color 1250ms $timing-func;
+        transition: background-color 250ms $timing-func,
+          color 250ms $timing-func;
       }
     }
 
