@@ -3,26 +3,22 @@
     padding-top: 125px;
     margin: 0;
     background-color: $footer-bg-color;
-    // background-image: url('../images/milk_mobile.png');
-
-    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    //     background-image: url('../images/milk_mobile_1@2x.png');
-    
-    // }
-    // @media screen and (min-width: 768px) {
-    //     background-image: none;
-    // }
-    // @media screen and (min-width: 1200px) {
-    //     background-image: url('../images/milk_decktop.png');
-
-    //     background-position: top 342px;
-    // }
-    // @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-    //     background-image: url('../images/milk_decktop1@2x.png');
-    // }
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+    background-image: url('./../images/milk_mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0px 766px;
+    @media screen and (min-width: 768px){
+        padding-top: 130px;
+        background-image: none;
+        }
+    @media screen and (min-width: 1280px){
+            padding-top: 125px;
+            background-image: url(./../images/milk_decktop.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-position: 0px 342px;
+        }
 }
 
 .title1_howitmade {
@@ -39,7 +35,7 @@
         font-size: 26px;
         line-height: 30px;
         }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         font-size: 30px;
         line-height: 34px;
         margin-bottom: 15px;    
@@ -60,10 +56,11 @@
         font-size: 48px;
         line-height: 55px;
         }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1280px){
         font-size: 58px;
         line-height: 66px;
-        margin-bottom: 55px;   
+        margin-top: 15px;
+        margin-bottom: 0px;
         }
 }
 .text_howitmade {
@@ -72,12 +69,50 @@
     justify-content: flex-start;
     padding-left: 30px;
     padding-right: 30px;
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.p_buttooom {
+    @media screen and (min-width: 768px){
+    width: 50%;
+    margin-left: 17px;
+    padding-right: 19px;
+    }
+    @media screen and (min-width: 1280px){
+    width: 50%;
+    margin-left: 74px;
+    padding-right: 16px;
+    }    
+}
+.cow-picture{
+    align-items: center;
+    @media screen and (min-width: 768px){
+        margin-top: 50px;
+        padding-left: 19px;
+    } 
+    @media screen and (min-width: 1280px){
+        margin-top: 55px;
+        padding-left: 92px;
+    }        
 }
 .lorem1 {
+
     margin-top: 46px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 12px;
     line-height: 19px;
+    @media screen and (min-width: 768px){
+        margin-top: 100px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 106px;
+        font-size: 16px;
+        line-height: 28px;
+    }        
 }
 .lorem2 {
     margin-top: 47px;
@@ -85,9 +120,33 @@
     font-size: 12px;
     line-height: 19px;
     color: $brawn-color;
+    @media screen and (min-width: 768px){
+        margin-top: 47px;
+        font-size: 14px;
+        line-height: 25px;
+    }  
+    @media screen and (min-width: 1280px){
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 27px;
+    }  
 }
-
-
+.lorem3 {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: $brawn-color;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        line-height: 25px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 27px;  
+    }    
+}
 .button_readmore {
     font-family: DM Sans;
     width: 176px;
@@ -108,39 +167,66 @@
     background-color: $hover-buttom-howitmade;
     color: $red-color;
 }
+    @media screen and (min-width: 768px){
+        margin-top: 62px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 45px;
+    }
+}
+.li_text{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    @media screen and (min-width: 768px){
+        font-size: 14px;
+        line-height: 24px;
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 16px;
+        line-height: 28px;
+        width: 330px;
+    }
 }
 
 .howitmade_list{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-        margin-top: 38px;
+        margin-top: 39px;
     
 
     @media screen and (min-width: 768px){
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-
+        margin-top: 66px;
+        margin-left: 16px;
+    }
+    @media screen and (min-width: 1280px){
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 146px;
+        margin-left: 16px;
+        
     }
 }
 .howitmade_lii {
     width: 100%;
-    margin-top: 38px;
+    margin-bottom: 38px;
     justify-content: space-between;
     @media screen and (min-width: 768px){
-
+        margin-right: 60px;
+        margin-bottom: 0px;
     }
-    @media screen and (min-width: 1200px){
-        width: 270px;
-    }
-    &:not(:last-child) {
-        @media screen and (min-width: 768px){
-            // margin-bottom: ;
-        }
+    @media screen and (min-width: 1280px){
+        margin-right: 30px;
     }
 }
 .number_howitmade {
+    width: 98px;
+    height: 56px;
     font-family: Titan One;
     font-weight: normal;
     font-size: 36px;
@@ -148,6 +234,34 @@
     letter-spacing: 0.04em;
     color: $red-color;
     margin-top: 16px;
+    @media screen and (min-width: 768px){
+        margin-top: 36px;
+        margin-bottom: 13px;
+        font-size: 48px;
+        line-height: 55px;
+    }
+    @media screen and (min-width: 768px){
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 58px;
+        line-height: 66px;
+    }
+}
+.picture_block {
+    width: 100%;
+    height: auto;
+    margin-top: 97px;
+    display: flex;
+    justify-content: center;
+    align-content: stretch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-width: 768px){
+        margin-top: 140px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 139px;
+    }
 }
 
 
