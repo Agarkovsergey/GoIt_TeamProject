@@ -32,7 +32,7 @@
   display: block;
   color: $pink-color;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 1.166;
   font-weight: 400px;
   margin-bottom: 15px;
   text-transform: uppercase;
@@ -68,7 +68,8 @@
 
   @media screen and (min-width: 1280px) {
     font-size: 58px;
-    line-height: 1.138;
+    line-height: 1.137;
+    letter-spacing: 0.06em;
     margin-bottom: 259px;
   }
 }
@@ -109,40 +110,22 @@
 // Текст секции
 .products-description {
   color: $white-color;
-  font-weight: 700;
   width: 200px;
-  font-size: 12px;
-  line-height: 1.52;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  margin-top: 65px;
+  margin-top: 66px;
   margin-left: auto;
   margin-right: auto;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.76;
+    width: 198px;
+    line-height: 1.79;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.76;
-    width: 240px;
-  }
-}
-
-.text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.7;
-  color: $white-color;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    font-size: 14px;
-    line-height: 1.76;
-  }
-
-  @media screen and (min-width: 1280px) {
+    width: 241px;
+    margin-top: 70px;
     font-size: 16px;
     line-height: 1.76;
   }
@@ -163,11 +146,11 @@
 
 .products-item {
     display: block;
-    height: 450px;
+    height: 485px;
     text-align: center;
     border-radius: 24px;
     position: relative;
-    padding-top: 140px;
+    padding-top: 161px;
 
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
@@ -178,16 +161,16 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
-      width: 220px;
-      height: 485px;
+      padding-top: 152px;
+      
     }
 
     @media screen and (min-width: 1280px) {
       &:not(:last-child) {
         margin-right: 23px;
       }
-      width: 330px;
       height: 525px;
+      padding-top: 163px;
     }
 }
 
@@ -234,13 +217,6 @@
      width: 100%;
    }
 }
-.icon_header_arrow{
-  width: 4,43px;
-  height: 8px;
-  padding-right: 17px;
-}
-
-
 
 .products-link::after {
   display: block;
@@ -253,6 +229,10 @@
   margin-right: auto;
   transform: translateY(30px);
   
+   @media screen and (min-width: 768px) {
+     transform: translateY(22px);
+   }
+
   @media screen and (min-width: 1280px) {
     transform: translateY(40px);
   }
