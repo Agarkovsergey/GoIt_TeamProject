@@ -14,6 +14,9 @@ header {
     width: 100%;
 
     @media screen and (min-width: 768px) {
+      padding-left: 4.427083333333333%;
+      padding-right: 4.427083333333333%;
+
       padding-top: 37px;
       width: 768px;
     }
@@ -26,10 +29,8 @@ header {
   }
 
   a {
-    svg {
-      // margin-top: 6px;
-      margin-right: 19px;
-    }
+    display: flex;
+    align-items: center;
 
     font-style: normal;
     font-weight: 400;
@@ -40,26 +41,43 @@ header {
 
     text-transform: uppercase;
 
-    display: flex;
-    align-items: center;
-  }
+    svg {
+      margin-right: 19px;
+      border-radius: 50%;
+      border: 1px solid transparent;
 
+      transition: 250ms $timing-func;
+
+      &:hover {
+        border-radius: 50%;
+        border: 1px solid $white-color;
+      }
+    }
+  }
   .menu-button {
     position: relative;
     z-index: 998;
-    display: flex;
-    @media screen and (min-width: 1280px) {
-      display: none;
-    }
 
+    display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-left: auto;
 
     width: 25px;
     height: 25px;
 
     border: none;
     background-color: inherit;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 18px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+
     &:focus {
       outline: none;
       border: 1px dotted $ancor-hover-darc;
@@ -71,7 +89,7 @@ header {
     &.is-open {
       @media screen and (min-width: 768px) {
         top: -30px;
-        margin-right: -650px;
+        margin-right: -175px;
       }
     }
     &.is-open .icon-cross {
@@ -82,9 +100,6 @@ header {
     &.is-open .icon-menu {
       display: none;
     }
-    @media screen and (min-width: 768px) {
-      margin-right: -225px;
-    }
   }
 
   .buynow {
@@ -92,6 +107,10 @@ header {
     @media screen and (min-width: 768px) {
       display: block;
       padding: 10px 34px 10px 36px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding: 12px 34px 12px 36px;
     }
   }
   .b-menu {
@@ -167,6 +186,9 @@ header {
       font-weight: 700;
 
       color: $white-color;
+
+      transition: 250ms $timing-func;
+
       &:hover {
         color: $red-color;
       }
@@ -208,12 +230,6 @@ header {
   .container {
     position: relative;
 
-    // display: flex;
-    // justify-content: space-between;
-
-    // margin-left: 0;
-    // margin-right: auto;
-
     width: 100%;
     @media screen and (min-width: 768px) {
       width: 768px;
@@ -229,6 +245,7 @@ header {
     top: 92px;
     left: 63.2%;
     transform: translateX(-50%);
+
     @media screen and (min-width: 768px) {
       top: 63px;
       left: 58.5%;
@@ -242,8 +259,8 @@ header {
   .back-round {
     position: absolute;
     top: 83px;
-    left: 65.3%;
     transform: translateX(-50%);
+    left: 65.3125%;
 
     height: 346px;
     width: 346px;
@@ -252,14 +269,14 @@ header {
     background-color: #ffa5ba;
     @media screen and (min-width: 768px) {
       top: 31px;
-      left: 61%;
+      left: 61.06770833333333%;
 
       height: 324px;
       width: 324px;
     }
     @media screen and (min-width: 1280px) {
       top: 52px;
-      left: 62%;
+      left: 58.125%;
 
       height: 538px;
       width: 538px;
@@ -269,7 +286,7 @@ header {
   .content {
     position: absolute;
     top: 193px;
-    left: 6.25%;
+    left: 4.427083333333333%;
     @media screen and (min-width: 768px) {
       top: 102px;
       display: flex;
@@ -288,7 +305,6 @@ header {
       font-weight: 400;
       font-size: 26px;
       line-height: 1.15;
-      // letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $white-color;
 
@@ -365,20 +381,24 @@ header {
       .ancor {
         background-color: $red-color;
         color: $white-color;
+        border: 1px solid transparent;
 
         &:hover,
         &:focus {
-          background-color: $ancor-hover-darc;
+          background-color: $red-dots-color;
           color: $white-color;
+          border: 1px solid $hover-buttom-howitmade;
         }
         &-accent {
           background-color: $white-color;
           color: $red-color;
+          border: 1px solid transparent;
 
           &:hover,
           &:focus {
-            background-color: $ancor-hover-lite;
+            background-color: $hover-buttom-howitmade;
             color: $red-color;
+            border: 1px solid $ancor-hover-darc;
           }
         }
       }
@@ -426,6 +446,17 @@ header {
             }
           }
           svg {
+            transition: border 250ms $timing-func;
+
+            &:hover,
+            &:focus {
+              outline: none;
+              border-radius: 50%;
+              background-color: $hover-buttom-howitmade;
+              color: $red-color;
+              border: 1px solid $ancor-hover-darc;
+            }
+
             @media screen and (min-width: 768px) {
               width: 18px;
               height: 18px;
@@ -441,73 +472,101 @@ header {
   }
   .info {
     display: none;
+
     @media screen and (min-width: 768px) {
       display: block;
     }
 
     .info-data {
-      position: relative;
+      position: absolute;
       top: 94px;
-      right: 0;
+      right: 4.4%;
+
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      .cafe {
-        margin-right: auto;
-        width: 43px;
-        height: 44px;
-        position: relative;
-      }
-      .truck {
-        margin-right: auto;
+      align-items: flex-end;
 
-        width: 51px;
+      @media screen and (min-width: 1280px) {
+        right: 7.6%;
+        top: 156px;
+      }
+
+      & li {
+        margin-bottom: 13px;
+
         height: 43px;
 
-        position: relative;
+        @media screen and (min-width: 1280px) {
+          margin-bottom: 15px;
+          height: 77px;
+        }
       }
+
       .ring {
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
+        margin-left: auto;
+        margin-bottom: -15px;
 
         width: 16px;
         height: 16px;
+
         background-color: $white-color;
         border-radius: 50%;
+
+        @media screen and (min-width: 1280px) {
+          margin-bottom: -26px;
+
+          width: 30px;
+          height: 30px;
+        }
       }
       .data-content {
+        margin-right: 8px;
+
         font-family: Titan One;
         font-style: normal;
         font-weight: 400;
         font-size: 28px;
-        line-height: 1.14;
+        line-height: 1.15;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
         color: $red-color;
+        @media screen and (min-width: 1280px) {
+          margin-right: 15px;
+          margin-bottom: 11px;
+
+          font-size: 46px;
+          line-height: 1.15;
+        }
       }
       .name {
+        margin-right: 8px;
+
         font-family: DM Sans;
         font-style: normal;
         font-weight: 400;
         font-size: 8px;
-        line-height: 10px;
+        line-height: 1.25;
         text-align: right;
 
         color: $white-color;
+
+        @media screen and (min-width: 1280px) {
+          margin-right: 18px;
+          font-size: 14px;
+          line-height: 1.3px;
+        }
       }
     }
     .tasty {
       position: absolute;
-      right: 6.25%;
+      right: 4.817708333333333%;
       top: 266px;
 
       @media screen and (min-width: 1280px) {
         position: absolute;
-        right: 6.25%;
+        right: 8.515625%;
         top: 433px;
       }
     }
