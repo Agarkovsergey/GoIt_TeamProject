@@ -142,6 +142,7 @@ header {
     &.is-open {
       display: block;
     }
+
     .buynow {
       display: block;
 
@@ -159,19 +160,20 @@ header {
         display: none;
       }
     }
-    ul {
-      @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
 
-      :last-child {
+    ul {
+      &:last-child {
         border-bottom: 2px solid $menu-border;
 
         @media screen and (min-width: 1280px) {
           border-bottom: none;
         }
+      }
+
+      @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
     li {
@@ -183,14 +185,28 @@ header {
       height: 42px;
 
       border-top: 2px solid $menu-border;
-      font-weight: 700;
+      a {
+        text-transform: none;
+        display: block;
 
-      color: $white-color;
+        font-size: 14px;
+        line-height: 1.29;
 
-      transition: 250ms $timing-func;
+        font-style: normal;
+        font-weight: 700;
 
-      &:hover {
-        color: $red-color;
+        color: $white-color;
+
+        transition: 250ms $timing-func;
+
+        @media screen and (min-width: 1280px) {
+          font-size: 16px;
+          line-height: 1.31;
+        }
+
+        &:hover {
+          color: $red-color;
+        }
       }
       @media screen and (min-width: 1280px) {
         display: block;
@@ -200,9 +216,6 @@ header {
         height: 100%;
 
         border-top: none;
-
-        font-size: 16px;
-        line-height: 1.31;
 
         &:not(:last-child) {
           margin-right: 35px;
