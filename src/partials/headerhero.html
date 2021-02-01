@@ -5,7 +5,7 @@
       ><svg width="50" height="50">
         <use href="./images/symbol-defs.svg#icon-logo"></use>
       </svg>
-      <span class="logo-tytel section-title">icecream</span>
+      <span class="loggo logo-tytel section-title">icecream</span>
     </a>
     <button
       class="menu-button"
@@ -13,7 +13,7 @@
       aria-expanded="false"
       data-menu-button
     >
-      <svg aria-label="переключатель мобильного меню" width="20" height="12">
+      <svg aria-label="переключатель мобильного меню" width="20" height="17">
         <use
           class="icon-menu"
           href="./images/symbol-defs.svg#icon-menu-b"
@@ -123,6 +123,66 @@
       />
     </picture>
 
+    <div class="info">
+      <ul class="info-data">
+        <li class="cafe">
+          <div class="ring"></div>
+          <p class="data-content">16</p>
+          <p class="name">cafes</p>
+        </li>
+
+        <li class="truck">
+          <div class="ring"></div>
+          <p class="data-content">23</p>
+          <p class="name">food trucks</p>
+        </li>
+      </ul>
+
+      <picture class="tasty">
+        <source
+          srcset="
+            ./images/hero_so_tasy_tablet_.webp    1x,
+            ./images/hero_so_tasy_tablet_@2x.webp 2x,
+            ./images/hero_so_tasy_tablet_@3x.webp 3x
+          "
+          type="image/webp"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero_so_tasy_desctop_.webp    1x,
+            ./images/hero_so_tasy_desctop_@2x.webp 2x,
+            ./images/hero_so_tasy_desctop_@3x.webp 3x
+          "
+          type="image/webp"
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero_so_tasy_tablet_.png    1x,
+            ./images/hero_so_tasy_tablet_@2x.png 2x,
+            ./images/hero_so_tasy_tablet_@3x.png 3x
+          "
+          type="image/png"
+          media="(min-width: 768px) and (max-width: 1279px)"
+        />
+
+        <source
+          srcset="
+            ./images/hero_so_tasy_desctop_.png    1x,
+            ./images/hero_so_tasy_desctop_@2x.png 2x,
+            ./images/hero_so_tasy_desctop_@3x.png 3x
+          "
+          type="image/png"
+          media="(min-width: 1280px)"
+        />
+
+        <img src="./images/hero_so_tasy_tablet_.png" alt="tasty" />
+      </picture>
+    </div>
+
     <div class="content">
       <h1>
         ice cream <br />
@@ -190,63 +250,6 @@
           ></a>
         </div>
       </div>
-    </div>
-    <div class="info">
-      <!-- <div class="info-data">
-        <div class="cafe">
-          <div class="ring"></div>
-          <p class="data-content">16</p>
-          <p class="name">cafes</p>
-        </div>
-        <div class="truck">
-          <div class="ring"></div>
-          <p class="data-content">23</p>
-          <p class="name">food trucks</p>
-        </div>
-      </div> -->
-      <picture class="tasty">
-        <source
-          srcset="
-            ./images/hero_so_tasy_tablet_.webp    1x,
-            ./images/hero_so_tasy_tablet_@2x.webp 2x,
-            ./images/hero_so_tasy_tablet_@3x.webp 3x
-          "
-          type="image/webp"
-          media="(min-width: 768px) and (max-width: 1279px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero_so_tasy_desctop_.webp    1x,
-            ./images/hero_so_tasy_desctop_@2x.webp 2x,
-            ./images/hero_so_tasy_desctop_@3x.webp 3x
-          "
-          type="image/webp"
-          media="(min-width: 1280px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero_so_tasy_tablet_.png    1x,
-            ./images/hero_so_tasy_tablet_@2x.png 2x,
-            ./images/hero_so_tasy_tablet_@3x.png 3x
-          "
-          type="image/png"
-          media="(min-width: 768px) and (max-width: 1279px)"
-        />
-
-        <source
-          srcset="
-            ./images/hero_so_tasy_desctop_.png    1x,
-            ./images/hero_so_tasy_desctop_@2x.png 2x,
-            ./images/hero_so_tasy_desctop_@3x.png 3x
-          "
-          type="image/png"
-          media="(min-width: 1280px)"
-        />
-
-        <img src="./images/hero_so_tasy_tablet_.png" alt="tasty" />
-      </picture>
     </div>
   </div>
   <script>
