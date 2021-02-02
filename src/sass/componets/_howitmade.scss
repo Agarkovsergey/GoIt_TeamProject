@@ -230,6 +230,11 @@
     margin-right: 30px;
   }
 }
+.howitmade_lii:last-child {
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
+}
 .number_howitmade {
   width: 98px;
   height: 56px;
